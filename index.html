@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+        /* Definir o fundo azul para toda a página */
+        body {
+            background-color: #367415; /* Cor de fundo*/
+            font-family: Arial, sans-serif; /* Fonte do texto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura total da tela */
+            margin: 0; /* Remove a margem padrão */
+        }
+
+        /* Container centralizado */
+        .container {
+            background-color: white; /* Fundo dos containers branco */
+            padding: 20px;
+            border-radius: 15px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 300px; /* Largura da caixa */
+            text-align: center;
+        }
+
+        /* Título */
+        h1 {
+            color: #333; /* Cor do texto do título */
+            margin-bottom: 20px;
+        }
+
+        /* Estilo dos inputs de data */
+        input[type="text"] {
+            padding: 10px;
+            width: 100%; /* Largura total */
+            margin: 10px 0; /* Espaço entre os inputs */
+            border: 2px solid #367415; /* Cor das bordas */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-sizing: border-box; /* Inclui padding no tamanho total */
+            font-size: 16px; /* Tamanho da fonte */
+        }
+
+        /* Botão */
+        button {
+            background-color: #367415; /* Cor de fundo do Botao */
+            color: white; /* Texto branco */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px; /* Bordas arredondadas */
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #367415; /* Cor mais escura no hover */
+        }
+
+
+        /* Estilo para a assinatura no canto inferior direito */
+.assinatura {
+    position: fixed; /* Fixa a posição na tela */
+    bottom: 10px; /* Distância do fundo */
+    right: 10px; /* Distância da direita */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto (branco) */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+    padding: 5px 10px; /* Padding para dar um espaço ao redor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: Arial, sans-serif; /* Fonte da assinatura */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+    </style>
+</head>
+<body>
+    <<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .cadastros {
+            margin-top: 20px;
+        }
+
+        .cadastro {
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro de Conta</h1>
+        
+        <!-- Formulário de Cadastro -->
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Digite seu email">
+
+        <label for="senha">Senha:</label>
+        <div style="display: flex; gap: 8px;">
+            <input type="password" id="senha" placeholder="Digite sua senha" style="flex:1;">
+        </div>
+
+    <button onclick="Registrar()">Cadastrar</button>
+
+        <!-- Lista de cadastros -->
+        <div class="cadastros" id="cadastros"></div>
+    </div>
+
+
+        <div class="assinatura">
+    <p>Desenvolvido por Kawã Lucca Marques Souza Costa</p>
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+    function toggleSenha() {
+        const senhaInput = document.getElementById('senha');
+        if (senhaInput.type === 'password') {
+            senhaInput.type = 'text';
+        } else {
+            senhaInput.type = 'password';
+        }
+    }
+    </script>
+</body>
+</html>
