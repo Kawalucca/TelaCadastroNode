@@ -50,7 +50,3 @@ index.html: A página HTML contém um formulário simples onde o usuário pode i
 script.js: Esse script lida com a lógica de cadastrar usuários, armazenar os dados no localStorage e exibi-los na página. Além disso, ele permite a exclusão de cadastros e a visualização das senhas.
 
 server.js: O servidor básico em Node.js serve os arquivos HTML e JS. Ele roda na porta 2812 e pode ser acessado localmente.
-
-**Licença**
-
-Este projeto está licenciado sob a MIT License.
